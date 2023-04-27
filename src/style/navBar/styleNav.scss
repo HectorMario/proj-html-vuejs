@@ -1,0 +1,39 @@
+.nav{
+    height: 80px;
+    .logo{
+        width: 193px;
+        a{
+            text-decoration: none;
+            color: black;
+            img{
+                width: 40px;
+            }
+        }
+    }
+    .col{
+        height: 80px;
+        p{
+            width: 100%;
+            margin: 0;
+        } 
+        .ms-width{
+            width: 20vw;
+        } 
+    }
+    .login{
+        width: 30px;
+        a{
+            color: black;
+        }
+    }
+}
+.page{
+    height: 60px;
+    ul{
+        list-style: none;
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+}

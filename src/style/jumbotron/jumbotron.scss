@@ -1,0 +1,36 @@
+.ms-backgraound{
+    background-image: url(../../assets/img/bg-transparent-3.png);
+    background-color: #1E3120;
+    .ms-white{
+        color: #fff;
+        height: 60px;
+    }
+    .banner{
+        background-image: url(../../assets/img/banner-5-2x-scaled.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 70vh;
+        .container{
+            height: 70vh;
+            .ms-container{
+                width: 50%;
+                a{
+                    background-color: #fff;
+                    text-decoration: none;
+                    color: black;
+                    width: 35%;
+                    border-radius: 20px;
+                }
+            }
+        }
+    }
+    .container{
+        p{
+            color: #fff;
+            margin-bottom: 0;
+        }
+        a{
+            color: gray;
+        }
+    }
+}
