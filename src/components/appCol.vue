@@ -28,7 +28,10 @@ export default{
         <img src="" alt="">
     </div>
     <p>
-        <i :class="this.info.icon"></i> {{ stampText(this.info) }}
+        <i :class="this.info.icon"></i>
+
+            {{ stampText(this.info) }}
+            
     </p>
  </div>
 </template>

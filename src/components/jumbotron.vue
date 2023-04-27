@@ -1,10 +1,14 @@
 <script>
 import appColVue from './appCol.vue';
 import { store } from '../store';
+import appButton from './appButton.vue';
+import AppButton from './appButton.vue';
 export default{
     components:{
-        appColVue
-    },
+    appColVue,
+    appButton,
+    AppButton
+},
     data(){
         return{
             store,
@@ -26,7 +30,7 @@ export default{
                 <div class="ms-container d-flex gap-4 flex-column">
                     <p>FIND THE BEST ANIMAL SUPPLIES</p>
                     <h1>We know animals are a part of your family, let us help take care of them</h1>
-                    <a href="" class="ms-backgraund-white p-2 text-center">Learn more about us</a>
+                    <AppButton :mensage="'Learn more about us'" class="w-50"/>
                 </div>
             </div>
         </div>
