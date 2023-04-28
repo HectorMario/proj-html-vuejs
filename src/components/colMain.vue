@@ -10,7 +10,11 @@ export default{
     },
     methods:{
         src(){
-            return new URL(`../assets/img/product-${this.product.img}.jpg`, import.meta.url).href
+            if (this.product.img){
+                return new URL(`../assets/img/product-${this.product.img}.jpg`, import.meta.url).href
+            }else {
+                return new URL(this.product.imga, import.meta.url).href
+            }
         }
     }
 
