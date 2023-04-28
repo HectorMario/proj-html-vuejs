@@ -19,7 +19,9 @@ import appButtonVue from './appButton.vue';
                         links: ['My account', 'Orders', 'Checkout', 'Cart']
                     }
 
-                ]
+                ],
+                socials: ['fa-brands fa-square-facebook', 'fa-brands fa-instagram', 'fa-brands fa-twitter', 'fa-brands fa-youtube' ],
+                pages: ['Home','About', 'Blog', 'Contact', 'Shop']
             }
         }
     }
@@ -48,6 +50,24 @@ import appButtonVue from './appButton.vue';
             <input type="email" placeholder="Insert your email" >
             <appButtonVue :mensage="'Subscribe'" class="ms-back-gree w-50"/>
             </form>
+        </div>
+    </div>
+    <div class="container mt-4">
+        <div class="pages">
+            <ul class="d-flex gap-3 justify-content-center">
+                <li v-for="page in pages">
+                    <a href="">{{ page }}</a>
+                </li>
+            </ul>
+        </div>
+        <div class="social">
+            <ul class="d-flex gap-3 justify-content-center">
+                <li v-for="social in socials">
+                    <a href="">
+                        <i :class="social"></i>
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
  </div>
@@ -98,6 +118,13 @@ import appButtonVue from './appButton.vue';
                 background-color: #3D6F42;
                 color: #fff;
             }
+        }
+    }
+    ul{
+        list-style: none;
+        a{
+            color: #fff;
+            text-decoration: none;
         }
     }
 }
