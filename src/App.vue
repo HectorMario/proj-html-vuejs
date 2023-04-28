@@ -1,10 +1,12 @@
 <script>
 import appHeader from './components/appHeader.vue';
 import appMainVue from './components/appMain.vue';
+import appFotterVue from './components/appFotter.vue';
 export default{
   components: {
     appHeader,
-    appMainVue
+    appMainVue,
+    appFotterVue
   }
 }
 </script>
@@ -12,6 +14,7 @@ export default{
 <template>
   <appHeader/>
   <appMainVue/>
+  <appFotterVue/>
 </template>
 
 <style  lang="scss">
